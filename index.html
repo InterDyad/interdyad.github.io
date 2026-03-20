@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#0c1016" />
+
+    <title>InterDyad: Interactive Dyadic Speech-to-Video Generation</title>
+    <meta
+      name="description"
+      content="Project page for InterDyad: interactive dyadic speech-to-video generation."
+    />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <!-- Intentionally non-default typography; OK to fail gracefully to fallbacks. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450..900&family=Spline+Sans:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/data/videos.js"></script>
+    <script defer src="assets/main.js"></script>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="bg__grid"></div>
+      <div class="bg__blob bg__blob--a"></div>
+      <div class="bg__blob bg__blob--b"></div>
+    </div>
+
+    <header class="topbar" id="top">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <span class="brand__mark"></span>
+          <span class="brand__text">InterDyad</span>
+        </a>
+
+        <nav class="nav" aria-label="Sections">
+          <a class="nav__link" href="#abstract">Abstract</a>
+          <a class="nav__link" href="#method">Method</a>
+          <a class="nav__link" href="#results">Results</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--image" aria-label="Hero">
+        <img
+          class="hero__bgimg"
+          src="assets/img/teasor.png"
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+        />
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <div class="hero__text">
+            <p class="pill">Anonymous submission</p>
+            <h1 class="title">
+              Interactive Dyadic Speech-to-Video Generation by Querying Intermediate Visual Guidance
+              <!-- <span class="title__sub">by Querying Intermediate Visual Guidance</span> -->
+            </h1>
+            <p class="subtitle">
+              Given a dyadic audio input, our pipeline enables interactive dyadic speech-to-video generation by querying intermediate visual priors.
+            </p>
+
+            <!-- <div class="cta">
+              <a class="btn btn--primary" href="#" data-disabled-link="true">Paper (PDF)</a>
+              <a class="btn" href="#" data-disabled-link="true">arXiv</a>
+              <a class="btn" href="#" data-disabled-link="true">Code</a>
+              <a class="btn" href="#results">View Results</a>
+            </div> -->
+
+          </div>
+        </div>
+      </section>
+
+      <section class="featured" aria-label="Key Results">
+        <div class="container">
+          <div class="featured__banner">
+            <p class="pill pill--featured">Highlights</p>
+          </div>
+
+          <div class="gallery" data-section="highlights" aria-label="Highlights gallery">
+            <article class="vcard">
+              <div class="vpair vpair--single">
+                <div class="vbox vbox--featured">
+                  <video
+                    src="video_web/featured/highlight1.mp4"
+                    controls
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="assets/img/placeholder-teaser.svg"
+                  ></video>
+                  <div class="video-caption">
+                    <h3>Dual-Track Driving Audio from Comic Dialogue.</h3>
+                  </div>
+                  <style>
+                    .video-caption {
+                      text-align: center;
+                      margin-top: 8px; 
+                    }
+                    /* 确保h3样式继承且无默认外边距干扰 */
+                    .video-caption h3 {
+                      margin: 0; 
+                      font-size: inherit; 
+                      font-weight: inherit; 
+                    }
+                </style>
+                </div>
+              </div>
+            </article>
+            <article class="vcard">
+              <div class="vpair vpair--single">
+                <div class="vbox vbox--featured">
+                  <video
+                    src="video_web/featured/highlight2.mp4"
+                    controls
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="assets/img/placeholder-teaser.svg"
+                  ></video>
+                  <div class="video-caption">
+                    <h3>Interaction Patterns from Driving Audio.</h3>
+                  </div>
+                  <style>
+                    .video-caption {
+                      text-align: center;
+                      margin-top: 8px; 
+                    }
+                    /* 确保h3样式继承且无默认外边距干扰 */
+                    .video-caption h3 {
+                      margin: 0; 
+                      font-size: inherit; 
+                      font-weight: inherit; 
+                    }
+                </style>
+                </div>
+              </div>
+            </article>
+            <article class="vcard">
+              <div class="vpair vpair--single">
+                <div class="vbox vbox--featured">
+                  <video
+                    src="video_web/featured/highlight2_1.mp4"
+                    controls
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="assets/img/placeholder-teaser.svg"
+                  ></video>
+                  <div class="video-caption">
+                    <h3>Interaction Patterns from Reference Video.</h3>
+                  </div>
+                  <style>
+                    .video-caption {
+                      text-align: center;
+                      margin-top: 8px; 
+                    }
+                    /* 确保h3样式继承且无默认外边距干扰 */
+                    .video-caption h3 {
+                      margin: 0; 
+                      font-size: inherit; 
+                      font-weight: inherit; 
+                    }
+                </style>
+                </div>
+              </div>
+            </article>
+            <article class="vcard">
+              <div class="vpair vpair--single">
+                <div class="vbox vbox--featured">
+                  <video
+                    src="video_web/featured/highlight3.mp4"
+                    controls
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="assets/img/placeholder-teaser.svg"
+                  ></video>
+                  <div class="video-caption">
+                    <h3>Interaction Patterns from Driving Audio.</h3>
+                  </div>
+                  <style>
+                    .video-caption {
+                      text-align: center;
+                      margin-top: 8px; 
+                    }
+                    /* 确保h3样式继承且无默认外边距干扰 */
+                    .video-caption h3 {
+                      margin: 0; 
+                      font-size: inherit; 
+                      font-weight: inherit; 
+                    }
+                </style>
+                </div>
+              </div>
+            </article>
+            <article class="vcard">
+              <div class="vpair vpair--single">
+                <div class="vbox vbox--featured">
+                  <video
+                    src="video_web/featured/highlight3_1.mp4"
+                    controls
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="assets/img/placeholder-teaser.svg"
+                  ></video>
+                  <div class="video-caption">
+                    <h3>Interaction Patterns from Reference Video.</h3>
+                  </div>
+                  <style>
+                    .video-caption {
+                      text-align: center;
+                      margin-top: 8px; 
+                    }
+                    /* 确保h3样式继承且无默认外边距干扰 */
+                    .video-caption h3 {
+                      margin: 0; 
+                      font-size: inherit; 
+                      font-weight: inherit; 
+                    }
+                </style>
+                </div>
+              </div>
+            </article>
+            <div class="prose prose--abstract prose--wide">
+              <p class="prose__h3">
+                  Our method generates visual-audio synchronized conversational videos conditioned on a single reference frame of two subjects and dual-track driving audio, either synthesizing plausible interactions directly from the <strong style="color: red;">driving audio</strong> or replicating interaction patterns from a <strong style="color: red;">reference video</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="abstract">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Abstract</h2>
+          </div>
+          <div class="prose prose--abstract">
+            <!-- <p>
+              Despite progress in speech-to-video synthesis, existing methods often struggle to capture cross-individual dependencies and provide fine-grained control over reactive behaviors in dyadic settings. To address these challenges, we propose InterDyad, a framework that enables naturalistic interactive dynamics synthesis via querying structural motion guidance. Specifically, we first design an Interactivity Injector that achieves video reenactment based on identity-agnostic motion priors extracted from reference videos. Building upon this, we introduce a MetaQuery-based modality alignment mechanism to bridge the gap between conversational audio and these motion priors. By leveraging a Multimodal Large Language Model (MLLM), our framework is able to distill linguistic intent from audio to dictate the precise timing and appropriateness of reactions. To further improve lip-sync quality under extreme head poses, we propose Role-aware Dyadic Gaussian Guidance (RoDG) for enhanced lip-synchronization and spatial consistency. Finally, we introduce a dedicated evaluation suite with novelly designed metrics to quantify dyadic interaction. Comprehensive experiments demonstrate that InterDyad significantly outperforms state-of-the-art methods in producing natural and contextually grounded two-person interactions.
+            </p> -->
+            <p class="prose__h3">
+              Despite progress in speech-to-video synthesis, existing methods often struggle to capture cross-individual dependencies and provide fine-grained control over reactive behaviors in dyadic settings. To address these challenges, we propose InterDyad, a framework that enables naturalistic interactive dynamics synthesis via querying structural motion guidance. Specifically, we first design an Interactivity Injector that achieves video reenactment based on identity-agnostic motion priors extracted from reference videos. Building upon this, we introduce a MetaQuery-based modality alignment mechanism to bridge the gap between conversational audio and these motion priors. By leveraging a Multimodal Large Language Model (MLLM), our framework is able to distill linguistic intent from audio to dictate the precise timing and appropriateness of reactions. To further improve lip-sync quality under extreme head poses, we propose Role-aware Dyadic Gaussian Guidance (RoDG) for enhanced lip-synchronization and spatial consistency. Finally, we introduce a dedicated evaluation suite with novelly designed metrics to quantify dyadic interaction. Comprehensive experiments demonstrate that InterDyad significantly outperforms state-of-the-art methods in producing natural and contextually grounded two-person interactions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="method">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Method</h2>
+          </div>
+
+          <div class="card card--figure card--wide">
+            <img
+              class="figure"
+              src="assets/img/overview.png"
+              alt="Method overview"
+              loading="eager"
+            />
+          </div>
+
+	          <p class="method">
+	            <h3 class="h4">
+	              <strong>Top:</strong> The overall architecture is constructed by sequentially stacking Transformer blocks and trained via denoising to synthesize dyadic conversational videos with synchronized audio-visual human dynamics and coherent inter-subject interactions.<br>
+	              
+	              <strong>Bottom:</strong> We illustrate the interactivity injection mechanism, which leverages switchable multimodal inputs to enable rich and controllable synthesis of interactive motion patterns.
+	            </h3>
+	          </p>
+        </div>
+      </section>
+
+      <section class="section" id="results">
+        <div class="container">
+          <!-- <div class="toolbar" aria-label="Video controls">
+            <div class="toolbar__group toolbar__group--right">
+              <label class="toggle">
+                <input id="toggleSync" type="checkbox" checked />
+                <span class="toggle__label">Sync compare videos</span>
+              </label>
+              <label class="toggle">
+                <input id="toggleAutoplay" type="checkbox" />
+                <span class="toggle__label">Autoplay on view</span>
+              </label>
+            </div>
+          </div> -->
+
+          <div id="sections" class="sections" aria-label="Video sections">
+            <div class="skeleton">
+              Loading video list…
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--footer">
+            <span class="brand__mark"></span>
+            <span class="brand__text">InterDyad</span>
+          </div>
+          <!-- <p class="footer__meta">
+            Static project page template. No build step. Designed to be distinct from common
+            academic project page clones.
+          </p> -->
+        </div>
+        <div class="footer__right">
+          <a class="footer__link" href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

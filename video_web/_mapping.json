@@ -1,0 +1,207 @@
+[
+  {
+    "src": "ablation/1/001.mp4",
+    "dst": "ablation/1/001.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ablation/1/002.mp4",
+    "dst": "ablation/1/002.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ablation/2/001.mp4",
+    "dst": "ablation/2/001.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ablation/2/002.mp4",
+    "dst": "ablation/2/002.mp4",
+    "skipped": false
+  },
+  {
+    "src": "compare/001.mp4",
+    "dst": "compare/001.mp4",
+    "skipped": false
+  },
+  {
+    "src": "compare/002.mp4",
+    "dst": "compare/002.mp4",
+    "skipped": false
+  },
+  {
+    "src": "compare/003.mp4",
+    "dst": "compare/003.mp4",
+    "skipped": false
+  },
+  {
+    "src": "compare/004.mp4",
+    "dst": "compare/004.mp4",
+    "skipped": false
+  },
+  {
+    "src": "compare/005.mp4",
+    "dst": "compare/005.mp4",
+    "skipped": false
+  },
+  {
+    "src": "compare/006.mp4",
+    "dst": "compare/006.mp4",
+    "skipped": false
+  },
+  {
+    "src": "compare/007.mp4",
+    "dst": "compare/007.mp4",
+    "skipped": false
+  },
+  {
+    "src": "compare/008.mp4",
+    "dst": "compare/008.mp4",
+    "skipped": false
+  },
+  {
+    "src": "featured/highlight1.mp4",
+    "dst": "featured/highlight1.mp4",
+    "skipped": false
+  },
+  {
+    "src": "featured/highlight2.mp4",
+    "dst": "featured/highlight2.mp4",
+    "skipped": false
+  },
+  {
+    "src": "featured/highlight2_1.mp4",
+    "dst": "featured/highlight2_1.mp4",
+    "skipped": false
+  },
+  {
+    "src": "featured/highlight3.mp4",
+    "dst": "featured/highlight3.mp4",
+    "skipped": false
+  },
+  {
+    "src": "featured/highlight3_1.mp4",
+    "dst": "featured/highlight3_1.mp4",
+    "skipped": false
+  },
+  {
+    "src": "long_video/001.mp4",
+    "dst": "long_video/001.mp4",
+    "skipped": false
+  },
+  {
+    "src": "long_video/002.mp4",
+    "dst": "long_video/002.mp4",
+    "skipped": false
+  },
+  {
+    "src": "more_results/mono_1.mp4",
+    "dst": "more_results/mono_1.mp4",
+    "skipped": false
+  },
+  {
+    "src": "more_results/mono_2.mp4",
+    "dst": "more_results/mono_2.mp4",
+    "skipped": false
+  },
+  {
+    "src": "more_results/mono_3.mp4",
+    "dst": "more_results/mono_3.mp4",
+    "skipped": false
+  },
+  {
+    "src": "more_results/mono_4.mp4",
+    "dst": "more_results/mono_4.mp4",
+    "skipped": false
+  },
+  {
+    "src": "more_results/mono_5.mp4",
+    "dst": "more_results/mono_5.mp4",
+    "skipped": false
+  },
+  {
+    "src": "more_results/mono_6.mp4",
+    "dst": "more_results/mono_6.mp4",
+    "skipped": false
+  },
+  {
+    "src": "more_results/mono_7.mp4",
+    "dst": "more_results/mono_7.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/001.mp4",
+    "dst": "ref_audio/001.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/002.mp4",
+    "dst": "ref_audio/002.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/003.mp4",
+    "dst": "ref_audio/003.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/004.mp4",
+    "dst": "ref_audio/004.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/005.mp4",
+    "dst": "ref_audio/005.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/006.mp4",
+    "dst": "ref_audio/006.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/007.mp4",
+    "dst": "ref_audio/007.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/008.mp4",
+    "dst": "ref_audio/008.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/009.mp4",
+    "dst": "ref_audio/009.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/010.mp4",
+    "dst": "ref_audio/010.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/011.mp4",
+    "dst": "ref_audio/011.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/012.mp4",
+    "dst": "ref_audio/012.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/013.mp4",
+    "dst": "ref_audio/013.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/014.mp4",
+    "dst": "ref_audio/014.mp4",
+    "skipped": false
+  },
+  {
+    "src": "ref_audio/015.mp4",
+    "dst": "ref_audio/015.mp4",
+    "skipped": false
+  }
+]
