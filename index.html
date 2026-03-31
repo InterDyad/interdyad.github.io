@@ -68,12 +68,28 @@
               Given a dyadic audio input, our pipeline enables interactive dyadic speech-to-video generation by querying intermediate visual priors.
             </p>
 
-            <!-- <div class="cta">
-              <a class="btn btn--primary" href="#" data-disabled-link="true">Paper (PDF)</a>
-              <a class="btn" href="#" data-disabled-link="true">arXiv</a>
-              <a class="btn" href="#" data-disabled-link="true">Code</a>
-              <a class="btn" href="#results">View Results</a>
-            </div> -->
+            <!-- 添加作者列表 -->
+            <div class="authors" style="margin: 24px 0; line-height: 1.6; font-size: 16px;">
+              <span>Dongwei Pan</span> , 
+              <span>Longwei Guo</span> , 
+              <span>Jiazhi Guan</span> , 
+              <span>Luying Huang</span> , 
+              <span>Yiding Li</span> , 
+              <span>Haojie Liu</span> , 
+              <span>Haocheng Feng</span> , 
+              <span>Wei He</span> , 
+              <span>Kaisiyuan Wang</span> and 
+              <span>Hang Zhou</span>
+              <div style="margin-top: 8px; font-size: 20px; opacity: 0.8;">
+                Baidu Inc
+              </div>
+            </div>
+
+            <!-- 恢复并修改CTA按钮，添加arXiv链接 -->
+            <div class="cta">
+              <a class="btn btn--primary" href="https://arxiv.org/pdf/2603.23132" data-disabled-link="true">Paper (PDF)</a>
+              <a class="btn" href="https://arxiv.org/abs/2603.23132" target="_blank" rel="noopener noreferrer">arXiv</a>
+            </div>
 
           </div>
         </div>
@@ -256,9 +272,6 @@
             <h2 class="h2">Abstract</h2>
           </div>
           <div class="prose prose--abstract">
-            <!-- <p>
-              Despite progress in speech-to-video synthesis, existing methods often struggle to capture cross-individual dependencies and provide fine-grained control over reactive behaviors in dyadic settings. To address these challenges, we propose InterDyad, a framework that enables naturalistic interactive dynamics synthesis via querying structural motion guidance. Specifically, we first design an Interactivity Injector that achieves video reenactment based on identity-agnostic motion priors extracted from reference videos. Building upon this, we introduce a MetaQuery-based modality alignment mechanism to bridge the gap between conversational audio and these motion priors. By leveraging a Multimodal Large Language Model (MLLM), our framework is able to distill linguistic intent from audio to dictate the precise timing and appropriateness of reactions. To further improve lip-sync quality under extreme head poses, we propose Role-aware Dyadic Gaussian Guidance (RoDG) for enhanced lip-synchronization and spatial consistency. Finally, we introduce a dedicated evaluation suite with novelly designed metrics to quantify dyadic interaction. Comprehensive experiments demonstrate that InterDyad significantly outperforms state-of-the-art methods in producing natural and contextually grounded two-person interactions.
-            </p> -->
             <p class="prose__h3">
               Despite progress in speech-to-video synthesis, existing methods often struggle to capture cross-individual dependencies and provide fine-grained control over reactive behaviors in dyadic settings. To address these challenges, we propose InterDyad, a framework that enables naturalistic interactive dynamics synthesis via querying structural motion guidance. Specifically, we first design an Interactivity Injector that achieves video reenactment based on identity-agnostic motion priors extracted from reference videos. Building upon this, we introduce a MetaQuery-based modality alignment mechanism to bridge the gap between conversational audio and these motion priors. By leveraging a Multimodal Large Language Model (MLLM), our framework is able to distill linguistic intent from audio to dictate the precise timing and appropriateness of reactions. To further improve lip-sync quality under extreme head poses, we propose Role-aware Dyadic Gaussian Guidance (RoDG) for enhanced lip-synchronization and spatial consistency. Finally, we introduce a dedicated evaluation suite with novelly designed metrics to quantify dyadic interaction. Comprehensive experiments demonstrate that InterDyad significantly outperforms state-of-the-art methods in producing natural and contextually grounded two-person interactions.
             </p>
@@ -293,19 +306,6 @@
 
       <section class="section" id="results">
         <div class="container">
-          <!-- <div class="toolbar" aria-label="Video controls">
-            <div class="toolbar__group toolbar__group--right">
-              <label class="toggle">
-                <input id="toggleSync" type="checkbox" checked />
-                <span class="toggle__label">Sync compare videos</span>
-              </label>
-              <label class="toggle">
-                <input id="toggleAutoplay" type="checkbox" />
-                <span class="toggle__label">Autoplay on view</span>
-              </label>
-            </div>
-          </div> -->
-
           <div id="sections" class="sections" aria-label="Video sections">
             <div class="skeleton">
               Loading video list…
@@ -323,10 +323,6 @@
             <span class="brand__mark"></span>
             <span class="brand__text">InterDyad</span>
           </div>
-          <!-- <p class="footer__meta">
-            Static project page template. No build step. Designed to be distinct from common
-            academic project page clones.
-          </p> -->
         </div>
         <div class="footer__right">
           <a class="footer__link" href="#top">Back to top</a>
