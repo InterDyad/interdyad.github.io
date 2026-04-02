@@ -62,32 +62,86 @@
           <div class="hero__text">
             <h1 class="title">
               Interactive Dyadic Speech-to-Video Generation by Querying Intermediate Visual Guidance
-              <!-- <span class="title__sub">by Querying Intermediate Visual Guidance</span> -->
             </h1>
-            <p class="subtitle">
-              Given a dyadic audio input, our pipeline enables interactive dyadic speech-to-video generation by querying intermediate visual priors.
-            </p>
 
-            <!-- 添加作者列表 -->
-            <div class="authors" style="margin: 24px 0; line-height: 1.6; font-size: 16px;">
-              <span>Dongwei Pan</span> , 
-              <span>Longwei Guo</span> , 
-              <span>Jiazhi Guan</span> , 
-              <span>Luying Huang</span> , 
-              <span>Yiding Li</span> , 
-              <span>Haojie Liu</span> , 
-              <span>Haocheng Feng</span> , 
-              <span>Wei He</span> , 
-              <span>Kaisiyuan Wang</span> and 
-              <span>Hang Zhou</span>
-              <div style="margin-top: 8px; font-size: 20px; opacity: 0.8;">
-                Baidu Inc
-              </div>
+
+
+            <style>
+              .authors-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4px 6px;
+                margin-top: 1.2rem;
+                font-size: 1.1rem;
+                line-height: 1.8;
+              }
+              .authors-list .author {
+                white-space: nowrap;
+              }
+              .authors-list .author a {
+                color: #e0e0e0;
+                text-decoration: none;
+                transition: color 0.2s, text-decoration-color 0.2s;
+                text-underline-offset: 3px;
+              }
+              .authors-list .author a:hover {
+                color: #ffffff;
+                text-decoration: underline;
+                text-decoration-color: rgba(255,255,255,0.5);
+              }
+              .authors-list .author sup {
+                font-size: 0.7em;
+                margin-left: 1px;
+                color: #b0b0b0;
+              }
+              .affiliation-row {
+                margin-top: 0.7rem;
+                text-align: center;
+                font-size: 1rem;
+                color: #cccccc;
+                letter-spacing: 0.02em;
+              }
+              .affiliation-row sup {
+                font-size: 0.75em;
+                margin-right: 2px;
+                color: #b0b0b0;
+              }
+              .note-row {
+                margin-top: 0.3rem;
+                text-align: center;
+                font-size: 0.85rem;
+                color: #999999;
+              }
+              .note-row sup {
+                font-size: 0.8em;
+                margin-right: 1px;
+              }
+            </style>
+
+            <div class="authors-list">
+              <span class="author"><a href="#">Dongwei Pan</a><sup>1</sup>,</span>
+              <span class="author"><a href="#">Longwei Guo</a><sup>1</sup>,</span>
+              <span class="author"><a href="https://guanjz20.github.io/">Jiazhi Guan</a><sup>1</sup>,</span>
+              <span class="author"><a href="#">Luying Huang</a><sup>1</sup>,</span>
+              <span class="author"><a href="#">Yiding Li</a><sup>1</sup>,</span>
+              <span class="author"><a href="#">Haojie Liu</a><sup>1</sup>,</span>
+              <span class="author"><a href="#">Haocheng Feng</a><sup>1</sup>,</span>
+              <span class="author"><a href="#">Wei He</a><sup>1</sup>,</span>
+              <span class="author"><a href="https://scholar.google.com/citations?user=2Pedf3EAAAAJ">Kaisiyuan Wang</a><sup>1,*</sup>,</span>
+              <span class="author"><a href="https://hangz-nju-cuhk.github.io/">Hang Zhou</a><sup>1,*</sup></span>
+            </div>
+
+            <div class="affiliation-row">
+              <sup>1</sup>Baidu, AMU
+            </div>
+            <div class="note-row">
+              <sup>*</sup>Corresponding authors
             </div>
 
             <!-- 恢复并修改CTA按钮，添加arXiv链接 -->
             <div class="cta">
-              <a class="btn btn--primary" href="https://arxiv.org/pdf/2603.23132" data-disabled-link="true">Paper (PDF)</a>
+              <a class="btn btn--primary" href="https://arxiv.org/pdf/2603.23132" target="_blank" rel="noopener noreferrer">Paper (PDF)</a>
               <a class="btn" href="https://arxiv.org/abs/2603.23132" target="_blank" rel="noopener noreferrer">arXiv</a>
             </div>
 
@@ -310,6 +364,60 @@
             <div class="skeleton">
               Loading video list…
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="citation">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Citation</h2>
+          </div>
+          <style>
+            .cite-box {
+              position: relative;
+              background: rgba(255,255,255,0.05);
+              border: 1px solid rgba(255,255,255,0.12);
+              border-radius: 8px;
+              padding: 1.2rem 1.4rem;
+              max-width: 800px;
+              margin: 0 auto;
+            }
+            .cite-box pre {
+              margin: 0;
+              white-space: pre-wrap;
+              word-break: break-word;
+              font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+              font-size: 0.85rem;
+              line-height: 1.6;
+              color: #d0d0d0;
+            }
+            .cite-copy-btn {
+              position: absolute;
+              top: 0.6rem;
+              right: 0.6rem;
+              background: rgba(255,255,255,0.1);
+              border: 1px solid rgba(255,255,255,0.2);
+              border-radius: 5px;
+              color: #ccc;
+              font-size: 0.75rem;
+              padding: 4px 10px;
+              cursor: pointer;
+              transition: background 0.2s, color 0.2s;
+            }
+            .cite-copy-btn:hover {
+              background: rgba(255,255,255,0.2);
+              color: #fff;
+            }
+          </style>
+          <div class="cite-box">
+            <button class="cite-copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('bibtex').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>{this.textContent='Copy'},2000)})">Copy</button>
+<pre id="bibtex">@article{pan2026interdyad,
+  title={Interactive Dyadic Speech-to-Video Generation by Querying Intermediate Visual Guidance},
+  author={Pan, Dongwei and Guo, Longwei and Guan, Jiazhi and Huang, Luying and Li, Yiding and Liu, Haojie and Feng, Haocheng and He, Wei and Wang, Kaisiyuan and Zhou, Hang},
+  journal={arXiv preprint arXiv:2603.23132},
+  year={2026}
+}</pre>
           </div>
         </div>
       </section>
